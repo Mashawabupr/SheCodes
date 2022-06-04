@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-POP</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>I LOVE BTS</h1>
+        <h2>Especially their music and personality</h2>
+        <hr />
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/228/original/grammy.jpg?1654321476"
+            alt="BTS">
+        <hr />
+        <p>The members of <span><strong>BTS</strong></span> are <em>RM, Jin, SUGA, j-hope, Jimin, V, and Jung Kook.</em>
+            <br /> Gaining recognition for their authentic and self-produced music,
+            top-notch performances, and the way they interact with their fans,
+            BTS has established themselves as “21st century Pop Icons” breaking
+            countless world records.While imparting a positive influence through activities such as
+            the <em>LOVE MYSELF</em> campaign and
+            the UN &rsquo;<em>Speak Yourself&rsquo;</em> speech, the band has mobilized
+            millions of fans across the world (named <span>ARMY</span>), topped the Billboard
+            Hot 100 chart three times in 2020 alone, performed multiple sold-out
+            stadium shows across the world,
+            and been named TIME&rsquo;s Entertainer of the Year 2020.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/BTS" target="_blank">Read more on Wikipedia</a>
+        <button class="buy">Buy a new album</button>
+    </div>
+    <style>
+        h1 {
+            font-weight: bold;
+            border-radius: 10px;
+            border-style: solid;
+            padding: 10px;
+            border: 1px solid slateblue;
+            padding: 20px 10px;
+
+        }
+
+        h1,
+        h2,
+        em,
+        span {
+            color: slateblue
+        }
+
+        a {
+            display: block;
+            text-align: left;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+
+
+        img {
+            border-radius: 20%;
+
+            padding: 10px 0;
+            max-width: 60%
+        }
+
+        hr {
+            margin: 10px 0;
+        }
+
+        .container {
+            line-height: 25px;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 60%;
+            background: linear-gradient(to top, white 0%, #dfe4c3 100%);
+        }
+
+        .buy {
+            background-color: slateblue;
+            color: #EEF3D2;
+            font-size: 30px;
+            padding: 15px 20px;
+            margin: 30px 0;
+            border: none;
+            border-radius: 7px;
+            transition: 0.15s;
+        }
+
+        .buy:hover {
+            cursor: pointer;
+            opacity: 0.9;
+        }
+    </style>
+    <script>
+        let button = document.querySelector(".buy")
+        button.addEventListener("click", info)
+        function info() {
+            let name = prompt("What is your name?")
+            alert(`Thanks, ${name}, we will be in touch. Meanwhile, subscribe on our page!`)
+        }
+    </script>
+</body>
+
+</html>
