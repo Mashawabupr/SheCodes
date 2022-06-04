@@ -13,7 +13,7 @@
         <div class="header">
             <h2>I love Yougurt</h2>
             <button class="gy">Especially Greek Yougurt</button>
-            <img src="https://sob-prd-cdn-products.azureedge.net/media/image/product/en/large/0006568400470.jpg"
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/221/original/0006568400470.jpg?1654316921"
                 alt=" Greek Yougurt">
         </div>
         <div class="footer">
@@ -30,6 +30,10 @@
         </div>
     </div>
     <style>
+        body {
+            background-image: linear-gradient(to top, #CCF3EE 0%, #79DAE8 100%);
+        }
+
         .container {
             max-width: 600px;
             margin: 0 auto;
@@ -109,6 +113,22 @@
             max-width: 90%
         }
     </style>
+    <script>
+
+        function buy() {
+            let name = prompt("what is your name?")
+            let email = prompt("what is your email adress?")
+            let emoji = prompt("what is your favorite emoji?")
+            alert("Thak you, " + name + "! We will be in touch by email,meanwhile have lot of Yougurt! " + emoji)
+        }
+        let buy_button = document.querySelector(".buy")
+        buy_button.addEventListener("click", buy)
+
+
+
+
+
+    </script>
 </body>
 
 </html>
