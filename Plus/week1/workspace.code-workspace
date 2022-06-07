@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"name": "SheCodes-1",
+			"path": "..\\..\\..\\SheCodes-1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.CustomBrowser": "firefox"
+	}
+}
