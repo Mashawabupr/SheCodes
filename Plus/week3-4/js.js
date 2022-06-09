@@ -24,3 +24,4 @@ function together(event) {
   alert(`Your username is ${username.value}`);
 }
 all.addEventListener("submit", together);
+ 
