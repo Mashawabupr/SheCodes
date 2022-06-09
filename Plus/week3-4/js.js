@@ -10,7 +10,7 @@ let save = document.querySelector("#password-form");
 function func2(event) {
   event.preventDefault();
   let password = document.querySelector("#password-input");
-  alert(password.value);
+  alert(`🙀 Your super secret password is ${password.value}`);
 }
 save.addEventListener("submit", func2);
 
@@ -20,7 +20,7 @@ function together(event) {
   event.preventDefault();
   let email = document.querySelector("#email-input");
   let username = document.querySelector("#username-input");
-  alert(email.value);
-  alert(username.value);
+  alert(`Your email is ${email.value}`);
+  alert(`Your username is ${username.value}`);
 }
 all.addEventListener("submit", together);
