@@ -2,7 +2,15 @@
 let info=new Date()
 let day=info.getDay()
 let hour=info.getHours()
+if (hour<10){
+  hour=`0${hour}`
+}
+
 let minute=info.getMinutes()
+if (minute<10){
+  minute=`0${hour}`
+}
+
 let days = [
     "Sunday",
     "Monday",
