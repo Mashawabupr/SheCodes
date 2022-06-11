@@ -16,3 +16,7 @@ svg{width:50px;}
     margin-bottom:40px;
     margin-left: 10px;;
 }
+.whatWeather{display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
