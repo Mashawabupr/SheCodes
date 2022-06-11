@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <script>
+        function show(position){
+            let long=position.coords.longitude
+            let lat=position.coords.latitude
+            console.log(long,lat)
+            let key = "2610fc391e59a1d4c413f050d38f672d"
+        let url=`https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${lat}&lon=${long}&appid=${key}`
+        function showtemp(response){
+            let weather = response.data.main.temp
+            let newh1=document.createElement("h1")
+            newh1.innerHTML=`The outside temperature is ${Math.round(weather)}C`
+            document.body.appendChild(newh1)
+        }
+        
+        
+        axios.get(url).then(showtemp)
+        }
+        navigator.geolocation.getCurrentPosition(show)
+        
+        
+    </script>
+</body>
+</html>
