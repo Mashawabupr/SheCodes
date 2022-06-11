@@ -68,8 +68,12 @@ function func(){
     axios.get(apiUrl).then(showWeather)
     
 }
+let button=document.querySelector("#sity_search")
+button.addEventListener("click",func)
+
 
       //I don't know how to make it work properly((
+        /*
           function fcelsius(event){
             event.preventDefault()
             let gradus=document.querySelector("#gradus")
@@ -89,10 +93,9 @@ function func(){
 
             let farengeit=document.querySelector("#farengeit")
             farengeit.addEventListener("click",ffarengeit)
+            */
 
           
-let button=document.querySelector("#sity_search")
-button.addEventListener("click",func)
 
   
 
